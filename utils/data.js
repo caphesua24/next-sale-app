@@ -47,7 +47,7 @@ const data = {
       slug: 'sneaker',
       category: 'Sneakers',
       images: '/images/NikeSBDunkLowGratefulDeadBearsOrange.jpg',
-      price: 3.104,
+      price: 900,
       brand: 'Nike SB Dunk',
       discount: 0,
       rating: 4.7,
