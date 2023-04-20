@@ -41,11 +41,20 @@ body {
 }
 
 /* [slug] */
+.back {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 16px;
+  font-weight: 500;
+}
 .detail-1 {
   display: flex;
 }
 .detail-2 {
   margin-left: 20px;
+}
+.detail-2 h1 {
+  font-weight: bold;
 }
 .detail-3 {
   margin-top: 20px;

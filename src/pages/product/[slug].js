@@ -14,7 +14,7 @@ export default function ProductScreen() {
   }
   return (
     <Layout title={product.name}>
-      <div className="py-2">
+      <div className="back">
         <Link href="/">Back to products</Link>
       </div>
       <div className=" detail-1 md:grid-cols-4 md:gap-3">
@@ -46,11 +46,11 @@ export default function ProductScreen() {
       </div>
       <div className="card p-5">
         <div className="mb-2 flex justify-between">
-          <div>Price</div>
+          <div className="font-bold">Price</div>
           <div>${product.price}</div>
         </div>
         <div className="mb-2 flex justify-between">
-          <div>Status</div>
+          <div className="font-bold">Status</div>
           <div>{product.countInStock > 0 ? 'In Stock' : 'Unvailable'}</div>
         </div>
       </div>
