@@ -25,3 +25,17 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.all-cart {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  grid-template-columns: auto auto auto auto;
+  gap: 1rem;
+}
+
+.card {
+  @apply mb-5 block rounded-lg border border-gray-200 shadow-md;
+}
+.primary-button {
+  @apply rounded bg-amber-200 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
+}

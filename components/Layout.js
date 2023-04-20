@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-css-tags */
 import Head from 'next/head';
 import Link from 'next/link';
 import React from 'react';
@@ -11,57 +12,26 @@ export default function Layout({ title, children }) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div
-        style={{
-          display: 'flex',
-          minHeight: '100vh',
-          flexDirection: 'column',
-          justifyContent: 'space-between',
-        }}
-      >
+      <div className="flex min-h-screen flex-col justify-between">
         <header>
-          <nav
-            style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              height: '4rem',
-              alignItems: 'center',
-              backgroundColor: 'white',
-              color: 'black',
-              paddingLeft: '1rem',
-              paddingRight: '1rem',
-            }}
-          >
-            <Link
-              href="/"
-              style={{
-                fontSize: '1.125rem',
-                lineHeight: '1.75rem',
-                fontWeight: 'bold',
-              }}
-            >
+          <nav className=" flex h-12 items-center justify-between shadow-md">
+            <Link className="text-lg font-bold" href="/">
               DOLPHIN
             </Link>
-            <div className="">
-              <Link href="/cart" style={{ padding: '1rem' }}>
-                Cart
+            <div>
+              <Link href="/cart" className="p-2">
+                CART
               </Link>
-              <Link href="/login">Login</Link>
+              <Link href="/login" className="p-2">
+                LOGIN
+              </Link>
             </div>
           </nav>
         </header>
-        <main
-          style={{
-            width: '100%',
-            margin: 'auto',
-            marginTop: '2rem',
-            paddingLeft: '1rem',
-            paddingRight: '1rem',
-          }}
-        >
-          {children}
-        </main>
-        <footer>footer</footer>
+        <main className="container m-auto mt-4 px-4 ">{children}</main>
+        <footer className="flex h-10 justify-center items-center shadow-inner">
+          CÔNG TY CỔ PHẦN TẬP ĐOÀN AURA
+        </footer>
       </div>
     </>
   );

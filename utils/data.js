@@ -1,0 +1,117 @@
+const data = {
+  products: [
+    {
+      name: 'Nike SB Dunk Low VX1000',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/NikeSBDunkLowVX1000.jpeg',
+      price: 999,
+      brand: 'Nike SB Dunk',
+      discount: 0,
+      rating: 4.7,
+      numReview: 10, //Đánh giá
+      countInStock: 10, //Số hàng còn lại trong kho
+      description:
+        'The Nike SB Dunk Low VX1000 sneaker is dressed in gray, white, and black.',
+    },
+    {
+      name: 'Skate Like A Girl',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/NikeSBDunkLowSkateLikeAGirl.jpeg',
+      price: 210,
+      brand: 'Nike SB Dunk',
+      discount: 0,
+      rating: 4.7,
+      numReview: 10,
+      countInStock: 20,
+      description:
+        'The Nike SB Dunk Low Skate Like a Girl skateboarding sneaker is a collaboration between Nike and the all-inclusive non-profit Skate Like A Girl..',
+    },
+    {
+      name: 'Grateful Dead Bears Opti Yellow',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/NikeSBDunkLowGratefulDeadBearsOptiYellow.jpg',
+      price: 758,
+      brand: 'Nike SB Dunk',
+      discount: '-$326(-30%)',
+      rating: 4.7,
+      numReview: 10,
+      countInStock: 2,
+      description:
+        'Nike Skateboarding teamed up with legendary psychedelic rock band Grateful Dead to release the Nike SB Dunk Low Grateful Dead Bears Yellow, now available on StockX. The design theme of this collaboration pays homage to the Grateful Dead Bears, a series of stylized dancing bears illustrated by Bob Thomas on the back cover of the album History of the Grateful Dead, Volume One (Bear’s Choice) in 1973.',
+    },
+    {
+      name: 'Grateful Dead Bears Orange',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/NikeSBDunkLowGratefulDeadBearsOrange.jpg',
+      price: 3.104,
+      brand: 'Nike SB Dunk',
+      discount: 0,
+      rating: 4.7,
+      numReview: 10,
+      countInStock: 11,
+      description:
+        'Nike Skateboarding teamed up with legendary psychedelic rock band Grateful Dead and San Francisco-based skate shop FTC to release the special edition Nike SB Dunk Low Grateful Dead Bears Orange, now available on StockX. As the first release of a series of three Grateful Dead colorways, this Nike SB Dunk Low pays homage to the Grateful Dead Bears, a series of stylized dancing bears illustrated by Bob Thomas on the back cover of the album History of the Grateful Dead, Volume One (Bear’s Choice) in 1973.',
+    },
+    {
+      name: 'Retro High OG Lucky Green',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/Jordan1RetroHighOGLuckyGreen.webp',
+      price: 179,
+      brand: 'Air Jordan 1',
+      discount: 0,
+      rating: 4.7,
+      numReview: 10,
+      countInStock: 5,
+      description:
+        'Jordan Brand continued its pattern of Lucky Green colorways in early 2023, with the release of the Air Jordan 1 Retro High OG Lucky Green. The Air Jordan 1 is the third model to receive the Lucky Green treatment following the Jordan 2 and Jordan 3.',
+    },
+    {
+      name: 'SE Concord',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/Jordan1LowSEConcord.jpg',
+      price: 174,
+      brand: 'Air Jordan 1',
+      discount: 0,
+      rating: 4.7,
+      numReview: 10,
+      countInStock: 5,
+      description:
+        'The Jordan 1 Low SE Concord’s draw inspiration from the Air Jordan 11 Concord, highlighted by the sneakers combination of black patent leather, and white leather uppers. Jordan brand used a translucent blue outsole, and added a white Air Jordan Wings logo placed on the heel of each sneaker.',
+    },
+    {
+      name: 'Lucky Green Aquatone',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/Jordan1LowLuckyGreenAquatone.jpg',
+      price: 113,
+      brand: 'Air Jordan 1',
+      discount: 0,
+      rating: 4.7,
+      numReview: 10,
+      countInStock: 0,
+      description: 'SOLD OUT',
+    },
+    {
+      name: 'OG Starfish (GS)',
+      slug: 'sneaker',
+      category: 'Sneakers',
+      images: '/images/Jordan1LowOGStarfish(GS).webp',
+      price: 150,
+      brand: 'Air Jordan 1',
+      discount: 0,
+      rating: 4.7,
+      numReview: 35,
+      countInStock: 7,
+      description:
+        'The forefoot has a sequence of completely black panels. On the tongue label of this Low Air Jordan 1 variant, Jumpman Golf emblems have taken the place of the typical "NIKE AIR" text, and the "Wings" emblem is imprinted on the lateral collar of the sneaker. The Golf Jordans have a raised traction design with radial tread under the foot of this model for grade-schoolers.',
+    },
+  ],
+};
+
+export default data;
