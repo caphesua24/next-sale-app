@@ -30,7 +30,7 @@ export default function ProductScreen() {
         <div className="detail-2">
           <ul>
             <li>
-              <h1 className="text-lg ">{product.name}</h1>
+              <h1 className="text-lg text-center">{product.name}</h1>
             </li>
             <li>Category: {product.category}</li>
             <li>Brand: {product.brand}</li>
@@ -53,6 +53,7 @@ export default function ProductScreen() {
           <div className="font-bold">Status</div>
           <div>{product.countInStock > 0 ? 'In Stock' : 'Unvailable'}</div>
         </div>
+        <button className="primary-button w-full">Add to cart</button>
       </div>
     </Layout>
   );
