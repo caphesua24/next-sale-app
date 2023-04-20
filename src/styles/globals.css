@@ -39,3 +39,14 @@ body {
 .primary-button {
   @apply rounded bg-amber-200 py-2 px-4 shadow outline-none hover:bg-amber-400 active:bg-amber-500;
 }
+
+/* [slug] */
+.detail-1 {
+  display: flex;
+}
+.detail-2 {
+  margin-left: 20px;
+}
+.detail-3 {
+  margin-top: 20px;
+}

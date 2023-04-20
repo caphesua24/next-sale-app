@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       name: 'Nike SB Dunk Low VX1000',
-      slug: 'sneaker',
+      slug: 'sbdunk-vx1000',
       category: 'Sneakers',
       images: '/images/NikeSBDunkLowVX1000.jpeg',
       price: 999,
@@ -16,7 +16,7 @@ const data = {
     },
     {
       name: 'Skate Like A Girl',
-      slug: 'sneaker',
+      slug: 'skate-like-a-girl',
       category: 'Sneakers',
       images: '/images/NikeSBDunkLowSkateLikeAGirl.jpeg',
       price: 210,
@@ -30,7 +30,7 @@ const data = {
     },
     {
       name: 'Grateful Dead Bears Opti Yellow',
-      slug: 'sneaker',
+      slug: 'grateful-dead-bears-opti-yellow',
       category: 'Sneakers',
       images: '/images/NikeSBDunkLowGratefulDeadBearsOptiYellow.jpg',
       price: 758,
@@ -44,7 +44,7 @@ const data = {
     },
     {
       name: 'Grateful Dead Bears Orange',
-      slug: 'sneaker',
+      slug: 'grateful-dead-bears-orange',
       category: 'Sneakers',
       images: '/images/NikeSBDunkLowGratefulDeadBearsOrange.jpg',
       price: 900,
@@ -58,9 +58,9 @@ const data = {
     },
     {
       name: 'Retro High OG Lucky Green',
-      slug: 'sneaker',
+      slug: 'retro-high-og-lucky-green',
       category: 'Sneakers',
-      images: '/images/Jordan1RetroHighOGLuckyGreen.webp',
+      images: '/images/Jordan1RetroHighOGLuckyGreen.jpg',
       price: 179,
       brand: 'Air Jordan 1',
       discount: 0,
@@ -72,7 +72,7 @@ const data = {
     },
     {
       name: 'SE Concord',
-      slug: 'sneaker',
+      slug: 'se-concord',
       category: 'Sneakers',
       images: '/images/Jordan1LowSEConcord.jpg',
       price: 174,
@@ -86,7 +86,7 @@ const data = {
     },
     {
       name: 'Lucky Green Aquatone',
-      slug: 'sneaker',
+      slug: 'lucky-green-aquatone',
       category: 'Sneakers',
       images: '/images/Jordan1LowLuckyGreenAquatone.jpg',
       price: 113,
@@ -99,7 +99,7 @@ const data = {
     },
     {
       name: 'OG Starfish (GS)',
-      slug: 'sneaker',
+      slug: 'og-starfish',
       category: 'Sneakers',
       images: '/images/Jordan1LowOGStarfish(GS).webp',
       price: 150,
