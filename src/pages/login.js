@@ -21,7 +21,7 @@ export default function LoginScreen() {
           <input
             type="email"
             {...register('email', {
-              required: 'Please enter email',
+              required: 'Please enter email !',
               pattern: {
                 value: /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zAS_Z0-9-.]+$/i,
                 message: 'Please enter vaild email',
@@ -38,7 +38,7 @@ export default function LoginScreen() {
           <input
             type="password"
             {...register('password', {
-              required: 'Please enter password',
+              required: 'Please enter password !',
               minLength: { value: 6, message: 'password is more than 5 chars' },
             })}
             id="password"
