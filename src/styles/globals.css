@@ -59,3 +59,44 @@ body {
 .detail-3 {
   margin-top: 20px;
 }
+
+/* Login */
+
+.form-login {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 768px;
+}
+.form-login h1 {
+  margin-bottom: 14px;
+  font-size: 1.25rem /* 20px */;
+  line-height: 1.75rem /* 28px */;
+  font-weight: bold;
+}
+.form-login_email {
+  margin-bottom: 1rem /* 16px */;
+}
+.form-login_email input {
+  width: 100%;
+}
+.form-login_password {
+  margin-bottom: 1rem /* 16px */;
+}
+.form-login_password input {
+  width: 100%;
+}
+.form-login_button {
+  margin-bottom: 1rem;
+}
+.form-login_register {
+  margin-bottom: 1rem;
+}
+input,
+select,
+textarea {
+  @apply rounded border p-2 outline-none ring-indigo-300 focus:ring;
+}
+.error {
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}

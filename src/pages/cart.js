@@ -1,16 +1,18 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { useContext } from 'react';
-import { BeakerIcon } from '@heroicons/react/24/solid';
+import XCircleIcon from '@heroicons/react/24/outline/XCircleIcon';
 import { useRouter } from 'next/router';
 
+import { toast } from 'react-toastify';
 import Layout from '../../components/Layout';
 import { Store } from '../../utils/Store';
+import axios from 'axios';
+import dynamic from 'next/dynamic';
 
 function CartScreen() {
+  const router = useRouter();
   const { state, dispatch } = useContext(Store);
-  const { router } = useRouter();
-
   const {
     cart: { cartItems },
   } = state;
@@ -19,12 +21,12 @@ function CartScreen() {
   };
   const updateCartHandler = async (item, qty) => {
     const quantity = Number(qty);
-    // const { data } = await axios.get(`/api/products/${item._id}`);
-    // if (data.countInStock < quantity) {
-    //   return toast.error('Sorry. Product is out of stock');
-    // }
+    const { data } = await axios.get(`/api/products/${item._id}`);
+    if (data.countInStock < quantity) {
+      return toast.error('Sorry. Product is out of stock');
+    }
     dispatch({ type: 'CART_ADD_ITEM', payload: { ...item, quantity } });
-    // toast.success('Product updated in the cart');
+    toast.success('Product updated in the cart');
   };
   return (
     <Layout title="Shopping Cart">
@@ -34,7 +36,7 @@ function CartScreen() {
           Cart is empty. <Link href="/">Go shopping</Link>
         </div>
       ) : (
-        <div className="flex md:grid-cols-4 md:gap-5">
+        <div className="grid md:grid-cols-4 md:gap-5">
           <div className="overflow-x-auto md:col-span-3">
             <table className="min-w-full ">
               <thead className="border-b">
@@ -83,7 +85,7 @@ function CartScreen() {
                     <td className="p-5 text-right">${item.price}</td>
                     <td className="p-5 text-center">
                       <button onClick={() => removeItemHandler(item)}>
-                        <BeakerIcon className="h-5 w-5"></BeakerIcon>
+                        <XCircleIcon className="h-5 w-5"></XCircleIcon>
                       </button>
                     </td>
                   </tr>
@@ -101,7 +103,7 @@ function CartScreen() {
               </li>
               <li>
                 <button
-                  onClick={() => router.push('/shipping')}
+                  onClick={() => router.push('login?redirect=/shipping')}
                   className="primary-button w-full"
                 >
                   Check Out
@@ -115,4 +117,4 @@ function CartScreen() {
   );
 }
 
-export default CartScreen;
+export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
