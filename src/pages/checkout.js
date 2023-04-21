@@ -1,7 +1,6 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { useForm } from 'react-hook-form';
-import Link from 'next/link';
 
 export default function CheckOutScreen() {
   const {
@@ -14,9 +13,12 @@ export default function CheckOutScreen() {
   };
   return (
     <Layout title="Checkout">
-      <form className="form-login" onSubmit={handleSubmit(submitHandler)}>
+      <form
+        className="form-customer-information"
+        onSubmit={handleSubmit(submitHandler)}
+      >
         <h1>Form fill in customer information</h1>
-        <div className="form-login_email">
+        <div className="form-customer-information_name">
           <label htmlFor="name">Full Name</label>
           <input
             className="w-full"
@@ -29,7 +31,7 @@ export default function CheckOutScreen() {
           ></input>
           {errors.name && <div className="error">{errors.name.message}</div>}
         </div>
-        <div className="form-login_email">
+        <div className="form-customer-information_phone">
           <label htmlFor="number">Phone Number</label>
           <input
             className="w-full"
@@ -43,7 +45,7 @@ export default function CheckOutScreen() {
             <div className="error">{errors.number.message}</div>
           )}
         </div>
-        <div className="form-login_email">
+        <div className="form-customer-information_email">
           <label htmlFor="email">Email</label>
           <input
             type="email"
@@ -60,7 +62,7 @@ export default function CheckOutScreen() {
           ></input>
           {errors.email && <div className="error">{errors.email.message}</div>}
         </div>
-        <div className="form-login_email">
+        <div className="form-customer-information_address">
           <label htmlFor="address">Delivery address</label>
           <input
             className="w-full"
@@ -75,8 +77,7 @@ export default function CheckOutScreen() {
             <div className="error">{errors.address.message}</div>
           )}
         </div>
-
-        <div className="form-login_button">
+        <div className="form-customer-information_button">
           <button className="primary-button" type="submit" value="submit">
             Submit
           </button>
