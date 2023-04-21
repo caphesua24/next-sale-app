@@ -11,7 +11,6 @@ function MyApp({ Component, pageProps }) {
     // initialSession={pageProps.initialSession}
     >
       <Component {...pageProps} />
-      supabase
     </StoreProvider>
   );
 }

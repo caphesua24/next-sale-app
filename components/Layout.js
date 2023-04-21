@@ -5,7 +5,7 @@ import React, { useContext } from 'react';
 import { Store } from '../utils/Store';
 
 export default function Layout({ title, children }) {
-  const { state, dispatch } = useContext(Store);
+  const { state } = useContext(Store);
   const { cart } = state;
   return (
     <>
@@ -37,8 +37,8 @@ export default function Layout({ title, children }) {
           </nav>
         </header>
         <main className="container m-auto mt-4 px-4 ">{children}</main>
-        <footer className="flex h-10 justify-center items-center shadow-inner">
-          CÔNG TY CỔ PHẦN TẬP ĐOÀN AURA
+        <footer className="flex h-10 justify-center items-center shadow-inner font-bold">
+          Where there is a will, there is a way.
         </footer>
       </div>
     </>
