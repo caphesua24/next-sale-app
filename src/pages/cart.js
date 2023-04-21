@@ -3,7 +3,6 @@ import Link from 'next/link';
 import React, { useContext } from 'react';
 import XCircleIcon from '@heroicons/react/24/outline/XCircleIcon';
 import { useRouter } from 'next/router';
-
 import { toast } from 'react-toastify';
 import Layout from '../../components/Layout';
 import { Store } from '../../utils/Store';
