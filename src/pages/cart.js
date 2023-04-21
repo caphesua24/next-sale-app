@@ -103,7 +103,7 @@ function CartScreen() {
               </li>
               <li>
                 <button
-                  onClick={() => router.push('login?redirect=/shipping')}
+                  onClick={() => router.push('checkout?redirect=/shipping')}
                   className="primary-button w-full"
                 >
                   Check Out
@@ -117,4 +117,5 @@ function CartScreen() {
   );
 }
 
+// eslint-disable-next-line no-undef
 export default dynamic(() => Promise.resolve(CartScreen), { ssr: false });
