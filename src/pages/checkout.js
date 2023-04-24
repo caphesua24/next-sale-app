@@ -1,6 +1,7 @@
 import React from 'react';
 import Layout from '../../components/Layout';
 import { useForm } from 'react-hook-form';
+import Link from 'next/link';
 
 export default function CheckOutScreen() {
   const {
@@ -14,6 +15,8 @@ export default function CheckOutScreen() {
   return (
     <Layout title="Checkout">
       <form
+        action="/"
+        method="POST"
         className="form-customer-information"
         onSubmit={handleSubmit(submitHandler)}
       >
@@ -78,8 +81,18 @@ export default function CheckOutScreen() {
           )}
         </div>
         <div className="form-customer-information_button">
-          <button className="primary-button" type="submit" value="submit">
-            Submit
+          <button
+            className="primary-button"
+            type="submit"
+            value="submit"
+            onclick="event.preventDefault();this.closest('form').submit();"
+          >
+            <a
+              href=""
+              onclick="event.preventDefault();this.closest('form').submit();"
+            >
+              Submit
+            </a>
           </button>
         </div>
       </form>
